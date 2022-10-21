@@ -1,7 +1,7 @@
 const express = require('express');
-const { getAbsoluteAdminUrl } = require('strapi-utils/lib');
 const app = express();
- 
+let server = require('http').Server(app);
+
 const dataTest = {
     "full_name": "Nhã nè",
     "email": "nha@gmail.com"
