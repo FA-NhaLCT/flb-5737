@@ -11,7 +11,7 @@ const dataTest = {
             value: "Nhã nè",
         },
         {
-            key: "full_name",
+            key: "email",
             value: "nha@gmail.com"
 
         }
