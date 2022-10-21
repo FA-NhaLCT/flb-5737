@@ -1,12 +1,16 @@
-const express = require('express')
-const app = express()
-const port = 3000
-
+const express = require('express');
+const app = express();
+ 
 app.get('/', (req, res) => {
-    res.json({ full_name: 'Flavio' })
-
-})
-
-app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
-})
+  res
+    .status(200)
+    .send('Hello server is running')
+    .end();
+});
+ 
+// Start the server
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => {
+  console.log(`App listening on port ${PORT}`);
+  console.log('Press Ctrl+C to quit.');
+});
